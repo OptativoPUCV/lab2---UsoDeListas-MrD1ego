@@ -2,3 +2,20 @@ Thu 21 Mar 2024 08:20:28 PM UTC:
  tests:  1|4
 total_score: 10/70
 7fd82c6
+Thu 21 Mar 2024 08:36:29 PM UTC: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:8: error: expected expression before ‘=’ token
+   49 |        = malloc();
+      |        ^
+exercises.c:49:10: error: too few arguments to function ‘malloc’
+   49 |        = malloc();
+      |          ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:540:14: note: declared here
+  540 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+Compilation failed
+b03212d
