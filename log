@@ -122,3 +122,9 @@ exercises.c:67:13: error: unused variable ‘elemento’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 2026219
+Thu 21 Mar 2024 08:54:22 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|3
+total_score: 20/70
+428df2c
