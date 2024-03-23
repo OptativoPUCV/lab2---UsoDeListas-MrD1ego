@@ -128,13 +128,10 @@ int parentesisBalanceados(char *cadena) {
         }
       }
       char *Tope = (char *)top(pila);
+      pop(pila);
       if((digito == ')' && *Tope == '(')||
          (digito == ']' && *Tope == '[')|| 
          (digito == '}' && *Tope == '{'))
-      {
-        pop(pila);
-      }
-      else
       {
         return 0;
       }
