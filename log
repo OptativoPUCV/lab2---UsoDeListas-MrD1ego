@@ -168,3 +168,9 @@ exercises.c:130:13: error: unused variable ‘Tope’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e597a7a
+Sat 23 Mar 2024 02:00:29 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  3|2
+total_score: 40/70
+09212ab
