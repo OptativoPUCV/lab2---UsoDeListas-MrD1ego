@@ -111,62 +111,34 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   /*Stack *pila = create_stack();
+  Stack *pila = create_stack()
 
   for(int i = 0 ; cadena[i] != '\0' ; i++)
     {
-      char digito = cadena[i];
-      if(digito == '(' || digito == '[' || digito == '{')
+      if(cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{')
       {
-        push(pila, &digito);
+        push(pila, &cadena[i]);
       }
-      else if(digito == ')' || digito == ']' || digito == '}')
+      else if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
       {
-        if(get_size(pila) == 0)
+        if(top(pila) == NULL)
         {
           return 0;
         }
-        char *Tope = (char *)top(pila);
-        pop(pila);
-      
-        if((digito == ')' && *Tope != '(')||
-          (digito == ']' && *Tope != '[')|| 
-          (digito == '}' && *Tope != '{'))
+        char *ultimo = (char *)top(pila);
+        if ((cadena[i] == ')' && *top_char == '(') ||
+          (cadena[i] == ']' && *top_char == '[') ||
+          (cadena[i] == '}' && *top_char == '{')) 
+        {
+          pop(pila);
+        }
+        else
         {
           return 0;
         }
       }
     }
-   
-   if(get_size(pila) == 0)
-   {
-     return 1;
-   }
-   else
-   {
-     return 0;
-   }*/
-  Stack *pila = create_stack();
-
-  for(int i = 0; cadena[i] != '\0'; i++) {
-      char digito = cadena[i];
-      if(digito == '(' || digito == '[' || digito == '{') {
-          push(pila, &digito);
-      } else if(digito == ')' || digito == ']' || digito == '}') {
-          if(get_size(pila) == 0) {
-              return 0;
-          }
-          char *Tope = (char *)top(pila);
-          pop(pila);
-          if((digito == ')' && *Tope != '(') ||
-             (digito == ']' && *Tope != '[') || 
-             (digito == '}' && *Tope != '{')) {
-              return 0;
-          }
-      }
-  }
-
-  if(get_size(pila) == 0) {
+  if (top(pila) == NULL) {
       return 1;
   } else {
       return 0;
