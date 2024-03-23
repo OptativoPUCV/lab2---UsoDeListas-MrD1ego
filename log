@@ -231,3 +231,22 @@ exercises.c:128:15: error: unused variable ‘ultimo’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 4f9ae6c
+Sat 23 Mar 2024 02:31:12 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:116:3: error: expected ‘,’ or ‘;’ before ‘for’
+  116 |   for(int i = 0 ; cadena[i] != '\0' ; i++)
+      |   ^~~
+exercises.c:116:26: error: ‘i’ undeclared (first use in this function)
+  116 |   for(int i = 0 ; cadena[i] != '\0' ; i++)
+      |                          ^
+exercises.c:116:26: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:116:42: error: expected ‘;’ before ‘)’ token
+  116 |   for(int i = 0 ; cadena[i] != '\0' ; i++)
+      |                                          ^
+      |                                          ;
+exercises.c:116:42: error: expected statement before ‘)’ token
+Compilation failed
+ec786fc
