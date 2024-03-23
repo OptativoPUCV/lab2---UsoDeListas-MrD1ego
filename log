@@ -256,3 +256,16 @@ Sat 23 Mar 2024 02:31:28 AM UTC:
  tests:  8|1
 total_score: 60/70
 fe03902
+Sat 23 Mar 2024 02:59:50 AM UTC: 
+ exercises.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:118:30: error: expected ‘;’ before ‘}’ token
+  118 |       digito = next(Pila_Aux)
+      |                              ^
+      |                              ;
+  119 |     }
+      |     ~                         
+Compilation failed
+257f0a5
