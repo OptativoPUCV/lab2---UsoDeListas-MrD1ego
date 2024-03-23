@@ -157,3 +157,14 @@ Sat 23 Mar 2024 01:49:12 AM UTC:
  tests:  3|2
 total_score: 40/70
 389fc6d
+Sat 23 Mar 2024 01:59:20 AM UTC: 
+ exercises.c | 34 ++++++++++++++++++++++++++++++++++
+ 1 file changed, 34 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:130:13: error: unused variable ‘Tope’ [-Werror=unused-variable]
+  130 |       char *Tope = (char *)top(pila);
+      |             ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e597a7a
