@@ -117,8 +117,6 @@ void copia_pila(Stack* P1, Stack* P2) {
       push(P1, digito);
       digito = next(Pila_Aux);
     }
-
-  free(Pila_Aux);
 }
 
 /*
